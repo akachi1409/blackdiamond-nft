@@ -1,0 +1,25 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="smart-icon-1">
+            <stop stop-color="#FCE38A" offset="0%"></stop>
+            <stop stop-color="#F38181" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wireframe" transform="translate(-941.000000, -5709.000000)">
+            <g id="Smart-contract" transform="translate(390.000000, 5692.000000)">
+                <g id="Cycle" transform="translate(551.000000, 0.000000)">
+                    <g id="time" transform="translate(0.000000, 17.000000)">
+                        <g id="Group-18">
+                            <rect id="Rectangle-7-Copy-2" fill="url(#smart-icon-1)" x="0" y="0" width="64" height="64" rx="8"></rect>
+                            <g id="Group-6" transform="translate(15.000000, 15.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#FFFFFF">
+                                <path d="M18.9486166,21.2768775 L9.87747036,21.2768775 L9.87747036,18.2531621 L17.4367589,18.2531621 L17.4367589,10.6938735 L20.4604743,10.6938735 L20.4604743,19.7650198 C20.4604743,20.6010771 19.7831621,21.2768775 18.9486166,21.2768775 Z" id="Shape"></path>
+                                <path d="M30.2371542,17.3695652 C30.2371542,24.872915 24.1337846,30.9762846 16.6304348,30.9762846 C9.12708498,30.9762846 3.02371542,24.872915 3.02371542,17.3695652 C3.02371542,9.86621542 9.12708498,3.76284585 16.6304348,3.76284585 C19.6375198,3.76284585 22.4858597,4.74555336 24.8398221,6.53408103 L22.4090909,8.5 L32.4545455,12.3636364 L29.3636364,1.54545455 L27.072836,4.43108696 C24.1247134,2.04235178 20.4781126,0.739130435 16.6304348,0.739130435 C7.46101779,0.739130435 0,8.20014822 0,17.3695652 C0,26.5389822 7.46101779,34 16.6304348,34 C25.7998518,34 33.2608696,26.5389822 33.2608696,17.3695652 L30.2371542,17.3695652 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,252 @@
+
+/* ##### Footer Area ##### */
+
+.footer-area {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+}
+
+.footer-content-area{
+    padding: 80px 0;
+    margin-top: 100px;
+    background: #192057 !important;
+}
+.footer-content-area.demo{
+    margin-top: 70px
+}
+.footer-logo{
+    margin-bottom: 15px
+}
+.footer-logo a{
+    color: #fff;
+    font-size: 20px
+}
+.footer-logo img{
+    width: 40px
+}
+.footer-side-thumbnail {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+
+.copywrite_text > p {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.copywrite_text > p > a {
+    color: #fff;
+}
+
+.footer-social-info a i {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 15px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer-social-info a i:hover {
+    color: #4a7aec;
+}
+
+.contact_info_area .contact_info {
+    text-align: left !important;
+}
+
+.contact_info_area .contact_info h5 {
+    font-size: 14px;
+}
+
+.contact_info_area .contact_info p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.contact_info_area .contact_info a:hover p{
+    color: #fff
+}
+
+
+
+/* ##### Contact Area CSS ##### */
+
+.group {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.group input,
+.group textarea {
+    font-size: 12px;
+    font-style: italic;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.group input:focus,
+.group textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.group label {
+    color: #fff;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 14px;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    margin-bottom: 0;
+}
+
+.group .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.group .bar:before,
+.group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #fff;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+
+.group .bar:before {
+    left: 50%;
+}
+
+.group .bar:after {
+    right: 50%;
+}
+
+.group textarea {
+    height: 130px;
+}
+
+/* Form Active State */
+
+.group input:focus ~ label,
+.group textarea:focus ~ label,
+.group input:valid ~ label,
+.group textarea:valid ~ label {
+    top: -17px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.group input:focus ~ .bar:before,
+.group textarea:focus ~ .bar:before,
+.group input:focus ~ .bar:after,
+.group textarea:focus ~ .bar:after {
+    width: 50%;
+    background-color: #fff;
+}
+
+input:required,
+textarea:required {
+    box-shadow: none !important;
+}
+
+/* ##### Footer Area ##### */
+
+.footer-area {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+}
+
+.footer-content-area{
+    padding: 80px 0;
+    margin-top: 100px;
+    background: #192057 !important;
+}
+.footer-content-area.demo{
+    margin-top: 70px
+}
+.footer-logo{
+    margin-bottom: 15px
+}
+.footer-logo a{
+    color: #fff;
+    font-size: 20px
+}
+.footer-logo img{
+    width: 40px
+}
+.footer-side-thumbnail {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+
+.copywrite_text > p {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.copywrite_text > p > a {
+    color: #fff;
+}
+
+.footer-social-info a i {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 15px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer-social-info a i:hover {
+    color: #4a7aec;
+}
+
+.contact_info_area .contact_info {
+    text-align: left !important;
+}
+
+.contact_info_area .contact_info h5 {
+    font-size: 14px;
+}
+
+.contact_info_area .contact_info p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.contact_info_area .contact_info a:hover p{
+    color: #fff
+}

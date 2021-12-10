@@ -1,0 +1,25 @@
+[
+
+    {
+        "ClassTop":"col-12 col-md-6 col-lg-4 mt-30",
+        "ClassDown":"contribution-c-wapper has-arrow-left-lg has-arrow-bottom-md has-arrow-down-sm",
+        "ClassSteps":"gradient-t green",
+        "Steps":6,
+        "title":"Creative Chart Modules"
+    },
+    {
+        "ClassTop":"col-12 col-md-6 col-lg-4 mt-30",
+        "ClassDown":"contribution-c-wapper has-arrow-left-lg has-arrow-left-md has-arrow-down-sm",
+        "ClassSteps":"gradient-t green",
+        "Steps":5,
+        "title":"Adaptive Social Assistant"
+    },
+    {
+        "ClassTop":"col-12 col-md-6 col-lg-4 mt-30",
+        "ClassDown":"contribution-c-wapper ",
+        "ClassSteps":"gradient-t pink",
+        "Steps":4,
+        "title":"Ecommerce Embedded"
+    }
+
+]

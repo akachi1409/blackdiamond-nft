@@ -1,0 +1,89 @@
+.section-heading h2{
+    color: #fff;
+}
+
+/* ##### demo-video Area CSS ##### */
+.demo-video{
+    position: relative;
+}
+.demo-video .welcome-video-area{
+    margin-top: 0
+}
+@media (max-width: 992px){
+    .vertical-social{
+        display: none !important;
+    }
+}
+
+.vertical-social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    background: #0d003b;
+    height: 370px !important;
+    margin-left: 30px;
+    border-radius: 40px;
+    padding: 30px 15px;
+    z-index: 999;
+    transition: 1s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0px 4px 13px 0 rgba(168,67,253,.3);
+    overflow: hidden;
+    border-bottom: 3px solid #a843fd;
+}
+.vertical-social li{
+    padding: 7px 0;
+    text-align: center;
+}
+.vertical-social li a{
+    color: #fff;
+    opacity: .6;
+    font-size: 22px;
+}
+.vertical-social li a:hover{
+    opacity: 1
+}
+
+
+/* demo page */
+.demo-item {
+    -webkit-box-shadow: 0 2px 28px rgba(0,0,0,.1);
+    box-shadow: 0 2px 28px rgba(0,0,0,.1);
+    transition: all .3s ease-in;   
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 30px
+}
+@media (min-width: 1200px){
+    .demo .container {
+        max-width: 1280px;
+    }
+}
+.demo-item:hover{
+    -webkit-box-shadow: 0 1px 28px rgba(255,152,0,.66);
+    box-shadow: 0 1px 28px rgba(255,152,0,.66);
+        transform: translate(0,-9px);
+    -webkit-transform: translate(0,-9px);
+}
+
+.preview-link{text-align: center;}
+.preview-demo{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    width: 100%;
+    font-weight: 700;
+    color: #673AB7;
+    text-transform: uppercase;
+    border: 1px solid #673AB7;
+}
+.preview-demo i{
+    margin-left: 10px
+}
+.preview-demo:hover{
+    color: #333
+}

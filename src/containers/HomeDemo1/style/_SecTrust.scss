@@ -1,0 +1,185 @@
+
+/* ##### trust Area CSS ##### */
+.trust-section{
+    position: relative;
+}
+.trust-item{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 0 35px;
+    min-height: 205px;
+    padding-top: 37px;
+    padding-bottom: 25px;
+    box-shadow: 4px 4px 10px 0 rgba(168,67,253,.3);
+    overflow: hidden;
+    border-bottom: 3px solid #a843fd;
+}
+.ico-platform-logo{
+    margin-bottom: 25px;
+    min-height: 75px
+}
+@media (max-width: 767px){
+    .ico-platform-logo{
+        min-height: 107px
+    }
+}
+.check {
+    height: 40px;
+    margin: 0 -10px;
+    background-color: rgba(13,0,59,.9);
+    border-radius: 5px;
+    color: #25cbd3;
+    position: relative;
+}
+.check .value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0,243,255,.5);
+}
+.check .check-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    //background: url(../../../assets/img/svg/checkmark.svg) 50% no-repeat;
+    background-size: contain;
+    width: 31px;
+    height: 23px;
+}
+.gradient-section-bg{
+    background-image: linear-gradient(106deg,#6c7cf5,#1a2dab);
+    background-image: -webkit-linear-gradient(106deg,#6c7cf5,#1a2dab);
+}
+.dark-sec{
+    background: #181734
+}
+.token-distribution{
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .token-info-wapper{
+        margin-top: 30px;
+    }
+}
+.token-information{
+    position: relative;
+}
+.token-information span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    border-radius: 50%;
+}
+.token-information li{
+    padding: 5px 0;
+    padding-left: 50px;
+    position: relative;
+}
+.token-information h6{
+    color: #fff
+}
+.token-information .one{
+    border: 7px solid #997dea
+}
+.token-information .two{
+    border: 7px solid #e66392
+}
+.token-information .three{
+    border: 7px solid #2acd72
+}
+.token-information .four{
+    border: 7px solid #1eb8e0
+}
+.token-information .five{
+    border: 7px solid #b843b6
+}
+.token-information .six{
+    border: 7px solid #f5a67e
+}
+.token-information .seven{
+    border: 7px solid #e16e3a
+}
+.token-information .eight{
+    border: 7px solid #4581da
+}
+.token-info {
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+    display: -ms-flexbox;
+    display: flex;
+}
+.token-info .info-wrapper {
+    border-radius: 0 10px 10px 0;
+    padding: 10px 15px;
+    padding-left: 60px;
+    background: rgba(255,255,255,0.05);
+    border: solid 1px rgba(255,255,255,0.25);
+    width: 100%;
+    position: relative;
+    -ms-flex: 1;
+    flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: 0px 2px 27px 0px rgba(154, 161, 171, 0.18);
+    -webkit-box-shadow: 0px 2px 27px 0px rgba(154, 161, 171, 0.18);
+}
+.token-info .info-wrapper.one{
+    border-left: 7px solid #997dea
+}
+.token-info .info-wrapper.two{
+    border-left: 7px solid #e66392
+}
+.token-info .info-wrapper.three{
+    border-left: 7px solid #2acd72
+}
+.token-info .info-wrapper.four{
+    border-left: 7px solid #1eb8e0
+}
+.token-info .info-wrapper.five{
+    border-left: 7px solid #b843b6
+}
+.token-info .info-wrapper.six{
+    border-left: 7px solid #f5a67e
+}
+.token-info .info-wrapper.seven{
+    border-left: 7px solid #e16e3a
+}
+.token-info .info-wrapper.eight{
+    border-left: 7px solid #4581da
+}
+
+.info-wrapper .token-icon {
+    left: 12px;
+    width: 38px;
+    height: 38px;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 700;
+    opacity: 1;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: 50%;
+    background-size: contain;
+}
+.info-wrapper .token-icon.img{
+    opacity: 1
+}
+.info-wrapper .token-descr {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 0px;
+    font-weight: 300;
+    line-height: 1.25;
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "Steps":"one",
+        "title":"Token Name",
+        "text":"Crypto Token",
+        "addMargin0":false
+    },
+    {
+        "Steps":"two",
+        "title":"ICO Pre-sale starts in",
+        "text":"June 15-30, 2019",
+        "addMargin0":false
+    },
+    {
+        "Steps":"three",
+        "title":"Platform",
+        "text":"Ethereum based",
+        "addMargin0":false
+    },
+    {
+        "Steps":"four",
+        "title":"PreICO price",
+        "text":"1 ETH = 2,682 Token",
+        "addMargin0":false
+    },
+    {
+        "Steps":"five",
+        "title":"Price in ICO",
+        "text":"1 ETH = 2,182 Token",
+        "addMargin0":true
+    }
+]
