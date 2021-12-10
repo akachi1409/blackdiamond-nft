@@ -3,6 +3,9 @@
     flex-direction: column;
     padding-top: 2em;
 }
+.tokenInfo .token-info{
+    cursor: pointer;
+}
 .tokenInfo .tokenInfo-submit-box{
     border-radius: 10px;
     background-color: rgba(255,255,255,0.05);
@@ -13,6 +16,10 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+.tokenInfo .token-result{
+    padding-top: 2em;
+    word-wrap: break-word;
 }
 .tokenInfo-submit-box .input-wrapper{
     display: flex;

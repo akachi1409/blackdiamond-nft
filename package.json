@@ -8,10 +8,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "aos": "^2.3.4",
+    "bootstrap": "^5.1.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "rc-progress": "^3.1.4",
-    "bootstrap": "^5.1.0",
     "react": "^17.0.2",
     "react-countup": "^6.0.0",
     "react-dom": "^17.0.2",
@@ -23,7 +23,8 @@
     "react-typed": "^1.2.0",
     "sass": "^1.42.0",
     "swiper": "^6.7.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "web3": "^1.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
