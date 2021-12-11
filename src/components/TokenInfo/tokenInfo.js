@@ -11,14 +11,20 @@ const CoursetroContract =new web3.eth.Contract(
     '0x88e3850000EF6E56DfC7475B1A4b2214063eeDb8'
 );
 
+var defaultAccount;
 const ethEnabled = async () => {
-    if (window.ethereum) {
-      await window.ethereum.send('eth_requestAccounts');
-      window.web3 = new Web3(window.ethereum);
-      return true;
-    }
-    return false;
-  }
+if (window.ethereum) {
+    await window.ethereum.send('eth_requestAccounts');
+    window.web3 = new Web3(window.ethereum);
+    window.ethereum.enable().then((account) =>{
+        defaultAccount = account[0]
+        // web3.eth.defaultAccount = defaultAccount
+        
+    })
+    return true;
+}
+return false;
+}
 class TokenInfo extends React.Component{
     constructor(props){
         super(props);
@@ -117,7 +123,13 @@ class TokenInfo extends React.Component{
             result:"",
             owner:"",
             spender:"",
-            account:""
+            account:"",
+            amount:0,
+            subtractedValue:0,
+            addedValue:0,
+            recipient:"",
+            sender:"",
+            newOwner:""
         }
     }
     componentDidMount(){
@@ -149,7 +161,7 @@ class TokenInfo extends React.Component{
     async  submit_write_1(){
         var data="";
         try{
-            await CoursetroContract.methods.acceptOwnership().call()
+            await CoursetroContract.methods.acceptOwnership().send({from:defaultAccount})
             .then(function(result){
                 data=result
                 console.log(data);
@@ -171,6 +183,19 @@ class TokenInfo extends React.Component{
         }
         this.setState({result:data, account:""})
     }
+    async  submit_write_2(){
+        var data="";
+        try{
+            await CoursetroContract.methods.approve(this.state.spender, this.state.amount).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, amount:0, spender:""})
+    }
     async  submit_read_3(){
         var data="";
         try{
@@ -182,6 +207,19 @@ class TokenInfo extends React.Component{
             console.log(e);
         }
         this.setState({result:data})
+    }
+    async  submit_write_3(){
+        var data="";
+        try{
+            await CoursetroContract.methods.burn(this.state.account).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, account:""})
     }
     async  submit_read_4(){
         var data="";
@@ -195,6 +233,19 @@ class TokenInfo extends React.Component{
         }
         this.setState({result:data})
     }
+    async  submit_write_4(){
+        var data="";
+        try{
+            await CoursetroContract.methods.burnFrom(this.state.account, this.state.amount).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, account:"", amount:0})
+    }
     async  submit_read_5(){
         var data="";
         try{
@@ -206,6 +257,19 @@ class TokenInfo extends React.Component{
             console.log(e);
         }
         this.setState({result:data})
+    }
+    async  submit_write_5(){
+        var data="";
+        try{
+            await CoursetroContract.methods.decreaseAllowance(this.state.spender, this.state.subtractedValue).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, spender:"", subtractedValue:0})
     }
     async  submit_read_6(){
         var data="";
@@ -219,6 +283,19 @@ class TokenInfo extends React.Component{
         }
         this.setState({result:data})
     }
+    async  submit_write_6(){
+        var data="";
+        try{
+            await CoursetroContract.methods.increaseAllowance(this.state.spender, this.state.addedValue).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, spender:"", addedValue:0})
+    }
     async  submit_read_7(){
         var data="";
         try{
@@ -231,6 +308,58 @@ class TokenInfo extends React.Component{
         }
         this.setState({result:data})
     }
+    async  submit_write_7(){
+        var data="";
+        try{
+            await CoursetroContract.methods.mint(this.state.account, this.state.amount).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, account:"", amount:0})
+    }
+    async  submit_write_8(){
+        var data="";
+        try{
+            await CoursetroContract.methods.transfer(this.state.recipient, this.state.amount).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, recipient:"", amount:0})
+    }
+    async  submit_write_9(){
+        var data="";
+        try{
+            await CoursetroContract.methods.transferFrom(this.state.sender,this.state.recipient, this.state.amount).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, sender:"",  recipient:"", amount:0})
+    }
+    async  submit_write_10(){
+        var data="";
+        try{
+            await CoursetroContract.methods.transferOwnership(this.state.newOwner).send({from:defaultAccount})
+            .then(function(result){
+                data=result
+                console.log(data);
+            })
+        }catch(e){
+            console.log(e);
+        }
+        this.setState({result:data, newOwner:""})
+    }
     changeOwner(e){
         this.setState({owner:e.target.value})
     }
@@ -239,6 +368,24 @@ class TokenInfo extends React.Component{
     }
     changeAccount(e){
         this.setState({account:e.target.value})
+    }
+    changeAmount(e){
+        this.setState({amount:e.target.value})
+    }
+    changeSubtractedValue(e){
+        this.setState({subtractedValue:e.target.value})
+    }
+    changeAddedValue(e){
+        this.setState({addedValue:e.target.value})
+    }
+    changeRecipient(e){
+        this.setState({recipient:e.target.value})
+    }
+    changeSender(e){
+        this.setState({sender:e.target.value})
+    }
+    changeNewOwner(e){
+        this.setState({newOwner:e.target.value})
     }
     render(){
         return(
@@ -281,7 +428,7 @@ class TokenInfo extends React.Component{
                                         </div>
                                         <div className="input-wrapper">
                                             <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2"
-                                            value={this.statespender} onChange={(e)=>this.changeSpender(e)}/>
+                                            value={this.state.spender} onChange={(e)=>this.changeSpender(e)}/>
                                             <label className="input-label">Spender</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
@@ -362,15 +509,17 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>Approve</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2"
+                                            value={this.state.spender} onChange={(e)=>this.changeSpender(e)} />
                                             <label className="input-label">Spender</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2"
+                                            value={this.state.amount} onChange={(e)=>this.changeAmount(e)} />
                                             <label className="input-label">Amount</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3"  onClick={()=>this.submit_write_2()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -379,11 +528,12 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>Burn</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.account} onChange={(e)=>this.changeAccount(e)} />
                                             <label className="input-label">Account</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3"  onClick={()=>this.submit_write_3()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -392,15 +542,17 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>BurnFrom</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.account} onChange={(e)=>this.changeAccount(e)}/>
                                             <label className="input-label">Account</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
-                                            <label className="input-label">Amount</label>
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.amount} onChange={(e)=>this.changeAmount(e)} />
+                                            <label className="input-label"  >Amount</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_4()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -409,15 +561,17 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>DecreaseAllowance</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.spender} onChange={(e)=>this.changeSpender(e)} />
                                             <label className="input-label">Spender</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.subtractedValue} onChange={(e)=>this.changeSubtractedValue(e)}/>
                                             <label className="input-label">SubtractedValue</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_5()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -426,15 +580,17 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>IecreaseAllowance</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.spender} onChange={(e)=>this.changeSpender(e)} />
                                             <label className="input-label">Spender</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.addedValue} onChange={(e)=>this.changeAddedValue(e)}/>
                                             <label className="input-label">AddedValue</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_6()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -443,15 +599,17 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>Mint</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.account} onChange={(e)=>this.changeAccount(e)}/>
                                             <label className="input-label">Account</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.amount} onChange={(e)=>this.changeAmount(e)} />
                                             <label className="input-label">Amount</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_7()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -460,15 +618,17 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>Transfer</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.recipient} onChange = {(e)=>this.changeRecipient(e)}/>
                                             <label className="input-label">Recipient</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.amount} onChange={(e)=>this.changeAmount(e)} />
                                             <label className="input-label">Amount</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_8()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -477,19 +637,22 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>TransferFrom</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.sender} onChange={(e)=>this.changeSender(e)}/>
                                             <label className="input-label">Sender</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.recipient} onChange = {(e)=>this.changeRecipient(e)}/>
                                             <label className="input-label">Recipient</label>
                                         </div>
                                         <div className="input-wrapper">
-                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text"  type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.amount} onChange={(e)=>this.changeAmount(e)} />
                                             <label className="input-label">Amount</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_9()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
@@ -498,11 +661,12 @@ class TokenInfo extends React.Component{
                                     <div className="tokenInfo-submit-box">
                                         <h4>TransferOwnerShip</h4>
                                         <div className="input-wrapper">
-                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" />
+                                            <input className="input-text" type="text" placeholder="0xb73b1c961cC17F9526688f45a54607D29c1ED8D2" 
+                                            value={this.state.newOwner} onChange={(e)=>this.changeNewOwner(e)}/>
                                             <label className="input-label">NewOwner</label>
                                         </div>
                                         <div className="dream-btn-group fadeInUp" data-wow-delay="0.4s">
-                                            <button  className="btn more-btn mr-3">Submit</button>
+                                            <button  className="btn more-btn mr-3" onClick={()=>this.submit_write_10()}>Submit</button>
                                         </div>
                                         <h3 className="token-result">{this.state.result}</h3>
                                     </div>
