@@ -1,10 +1,10 @@
 import {useEffect} from 'react'
 
 // import All Of Data
-import Logo from '../../data/data-layout/Header/data-Logo.js';
+// import Logo from '../../data/data-layout/Header/data-Logo.js';
 import MenuInfo from '../../data/data-layout/Header/data-MenuInfo.json';
 import dropdownItem from '../../data/data-layout/Header/data-dropdownItem.json';
-
+import Logo from "../../data/data-layout/Header/logo.png";
 
 import {Addshrink , moveSmooth} from "../../utils/"
 
