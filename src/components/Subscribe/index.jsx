@@ -9,7 +9,7 @@ const Subscribe = () => {
               <div className="subscribe-wrapper">
                 <div className="section-heading text-center">
                   <h2 data-aos="fade-up" data-aos-delay="300">Don’t Miss ICO News And Updates!</h2>
-                  <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+                  <p data-aos="fade-up" data-aos-delay="400">We Are The Stones That The Builder Refused, We Are The Head Cornerstones.</p>
                 </div>
                 <div className="service-text text-center">
                   <div className="subscribe-section has-shadow">
