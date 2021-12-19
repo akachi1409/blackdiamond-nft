@@ -11,7 +11,7 @@ const AboutUs = ({firstClass , data , img}) => {
                       <img draggable="false" src={item.img} alt="" />
                     </div>
                     <h3><a className="normal" href="#">{item.title}</a></h3>
-                    <p className="text">BlackDiamond SC Inc We Are The StonesThatTheBuilderRefused, We AreTheHeadCornerstones.</p>
+                    <p className="text">BlackDiamond SC Inc We Are The Stones That The Builder Refused, We AreTheHeadCornerstones.</p>
                   </div>
                 </div>
               ))}
