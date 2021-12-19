@@ -17,8 +17,8 @@ const FuelFeatures = () => {
                 <div className="dream-dots text-left">
                   <span className="gradient-text blue">Crypto Trading</span>
                 </div>
-                <h4 className="fadeInUp" data-wow-delay="0.3s">Ride you want, The best way to get wherever you are going</h4>
-                <p className="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
+                <h4 className="fadeInUp" data-wow-delay="0.3s">Ride you want, Trading Your Favorite Cryptocurrency Just Got Easier. </h4>
+                <p className="fadeInUp" data-wow-delay="0.4s">BlackDiamondSCInc1 "BDSCI1" Can Be Found & Traded On Most Of Your Favorite Avalanche Exchanges.</p>
                 <div className="services-block-four align-items-center">
                   <div className="inner-box">
                     <div className="icon-img-box">
