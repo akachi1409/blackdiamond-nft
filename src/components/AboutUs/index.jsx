@@ -11,7 +11,7 @@ const AboutUs = ({firstClass , data , img}) => {
                       <img draggable="false" src={item.img} alt="" />
                     </div>
                     <h3><a className="normal" href="#">{item.title}</a></h3>
-                    <p className="text">BlackDiamond SC Inc We Are The Stones That The Builder Refused, We Are The Head Cornerstones.</p>
+                    <p className="text">BlackDiamondSCInc1 Token, Wallet & Trading Platform looks to provide a comprehensive DeFi product for both advance-users and those new to the world of decentralized trading, with a web3 feature-packed non-custodial wallet; multi-chain native token swapping, synthetic asset trading and the ability to invest in multi-chain savings accounts are just some of the functionalities on offer, with a non-custodial design meaning that users are always in control of their funds.. True meaning of decentralization!.</p>
                   </div>
                 </div>
               ))}
