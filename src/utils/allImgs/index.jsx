@@ -75,7 +75,7 @@ import HomeDemo2Platform1 from "../../assets/img/core-img/platform1.png"
 import HomeDemo2About1 from "../../assets/img/core-img/about-1.png"
 import HomeDemo2JoinBottom from "../../assets/img/svg/join-bottom.svg"
 
-import HomeDemo2Computer from "../../assets/img/core-img/computer.png"
+// import HomeDemo2Computer from "../../assets/img/core-img/computer.png"
 
 import HomeDemo2Platforms1 from "../../assets/img/ico-platforms/1.png"
 import HomeDemo2Platforms2 from "../../assets/img/ico-platforms/2.png"
@@ -468,7 +468,7 @@ export {
 	HomeDemo2Platform1,
 	HomeDemo2About1,
 	HomeDemo2JoinBottom,
-	HomeDemo2Computer,
+	// HomeDemo2Computer,
 
 	HomeDemo2Platforms1,
 	HomeDemo2Platforms2,
