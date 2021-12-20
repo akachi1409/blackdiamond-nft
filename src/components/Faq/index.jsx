@@ -27,7 +27,7 @@ const Faq = ({data , ClassSpanTitle}) => {
                     <>
                       <dt className="wave" data-bs-toggle="collapse" data-bs-target={`#${item.ID}`} aria-expanded="false">{item.text}</dt>
                       <dd data-aos="fade-up" id={item.ID} aria-labelledby="headingOne" data-bs-parent="#basicAccordion" className="accordion-collapse collapse">
-                          <p className="accordion-body">BlackDiamond SC Inc... We Are The Stones The Builder Refused, We Are The Head Cornerstones!</p>
+                          <p className="accordion-body">BlackDiamondSCInc1 (BDSCI1) is a token based on the EVM standard and Avalacnhe blockchain. Thus, this token is guaranteed to work properly in the ecosystem. It can be used in other decentralized programs without any problems. EVM standard ensures the token meets the security requirements that are common in the industry..</p>
                       </dd>
                     </>
                   ))}
