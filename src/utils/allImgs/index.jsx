@@ -12,7 +12,7 @@ import HomeDemo1Platform1 from "../../assets/img/core-img/platform1.png"
 import HomeDemo1About1 from "../../assets/img/core-img/about-1.png"
 import HomeDemo1JoinBottom from "../../assets/img/svg/join-bottom.svg"
 
-import HomeDemo1Computer from "../../assets/img/core-img/computer.png"
+// import HomeDemo1Computer from "../../assets/img/core-img/computer.png"
 
 import HomeDemo1Platforms1 from "../../assets/img/ico-platforms/1.png"
 import HomeDemo1Platforms2 from "../../assets/img/ico-platforms/2.png"
@@ -141,7 +141,7 @@ import HomeDemo3JoinBottom from "../../assets/img/svg/join-bottom.svg"
 import HomeDemo3Platform from "../../assets/img/core-img/platform.png"
 import HomeDemo3Rings from "../../assets/img/core-img/rings.png"
 
-import HomeDemo3Computer from "../../assets/img/core-img/computer.png"
+// import HomeDemo3Computer from "../../assets/img/core-img/computer.png"
 
 import HomeDemo3Platforms1 from "../../assets/img/ico-platforms/1.png"
 import HomeDemo3Platforms2 from "../../assets/img/ico-platforms/2.png"
@@ -202,7 +202,7 @@ import HomeDemo4Platform1 from "../../assets/img/core-img/platform1.png"
 import HomeDemo4About1 from "../../assets/img/core-img/about-1.png"
 import HomeDemo4JoinBottom from "../../assets/img/svg/join-bottom.svg"
 
-import HomeDemo4Computer from "../../assets/img/core-img/computer.png"
+// import HomeDemo4Computer from "../../assets/img/core-img/computer.png"
 
 import HomeDemo4Platforms1 from "../../assets/img/ico-platforms/1.png"
 import HomeDemo4Platforms2 from "../../assets/img/ico-platforms/2.png"
@@ -268,7 +268,7 @@ import HomeDemo5Platform1 from "../../assets/img/core-img/platform1.png"
 import HomeDemo5About1 from "../../assets/img/core-img/about-1.png"
 import HomeDemo5JoinBottom from "../../assets/img/svg/join-bottom.svg"
 
-import HomeDemo5Computer from "../../assets/img/core-img/computer.png"
+// import HomeDemo5Computer from "../../assets/img/core-img/computer.png"
 
 import HomeDemo5Platforms1 from "../../assets/img/ico-platforms/1.png"
 import HomeDemo5Platforms2 from "../../assets/img/ico-platforms/2.png"
@@ -335,7 +335,7 @@ import HomeDemo6Platform1 from "../../assets/img/core-img/platform1.png"
 // import HomeDemo6About1 from "../../assets/img/core-img/about-1.png"
 import HomeDemo6JoinBottom from "../../assets/img/svg/join-bottom.svg"
 
-import HomeDemo6Computer from "../../assets/img/core-img/computer.png"
+// import HomeDemo6Computer from "../../assets/img/core-img/computer.png"
 
 import HomeDemo6Platforms1 from "../../assets/img/ico-platforms/1.png"
 import HomeDemo6Platforms2 from "../../assets/img/ico-platforms/2.png"
@@ -405,7 +405,7 @@ export {
 	HomeDemo1Platform1,
 	HomeDemo1About1,
 	HomeDemo1JoinBottom,
-	HomeDemo1Computer,
+	// HomeDemo1Computer,
 
 	HomeDemo1Platforms1,
 	HomeDemo1Platforms2,
@@ -531,7 +531,7 @@ export {
 	HomeDemo3Platform1,
 	HomeDemo3About1,
 	HomeDemo3JoinBottom,
-	HomeDemo3Computer,
+	// HomeDemo3Computer,
 
 	// HomeDemo3Platform,
 	// HomeDemo3Rings,
@@ -595,7 +595,7 @@ export {
 	HomeDemo4Platform1,
 	HomeDemo4About1,
 	HomeDemo4JoinBottom,
-	HomeDemo4Computer,
+	// HomeDemo4Computer,
 	HomeDemo4Platforms1,
 	HomeDemo4Platforms2,
 	HomeDemo4Platforms3,
@@ -647,7 +647,7 @@ export {
 	HomeDemo5Platform1,
 	HomeDemo5About1,
 	HomeDemo5JoinBottom,
-	HomeDemo5Computer,
+	// HomeDemo5Computer,
 	HomeDemo5Platforms1,
 	HomeDemo5Platforms2,
 	HomeDemo5Platforms3,
@@ -699,7 +699,7 @@ export {
 	HomeDemo6Platform1,
 	HomeDemo6About1,
 	HomeDemo6JoinBottom,
-	HomeDemo6Computer,
+	// HomeDemo6Computer,
 	HomeDemo6Platforms1,
 	HomeDemo6Platforms2,
 	HomeDemo6Platforms3,
