@@ -28,12 +28,12 @@ const OurBlog = ({data , ClassSpanTitle}) => {
                   <div className="blog-content">
                     {/* Dream Dots */}
                     <div className="post-meta mt-20">
-                      <p>By <a href="#" className="post-author">ADMIN</a> <a href="#">Apr 10, 2018</a> <a href="#" className="post-comments">7 comments</a></p>
+                      <p>By <a href="#" className="post-author">ADMIN</a> <a href="#">Dec 7, 2021</a> <a href="#" className="post-comments">7 comments</a></p>
                     </div>
                     <a href="#" className="post-title">
                       <h4>{item.title}</h4>
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fugiat at vitae, ratione sapiente repellat.</p>
+                    <p>Stay Informed On All Thing's Happening With BDSCI1, Through Our Blog And News Update... We Promise To Keep You Posted!.</p>
                     <a href="#" className="btn more-btn mt-15">Read Details</a>
                   </div>
                 </div>
