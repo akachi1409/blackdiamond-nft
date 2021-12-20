@@ -13,8 +13,8 @@ const SmartContract = ({data}) => {
                   <span className="gradient-text blue">BDSCI1 Smart Contract</span>
                 </div>
                 <h4 className="fadeInUp" data-wow-delay="0.3s">Comprehensive smart contracts.</h4>
-                <p className="fadeInUp" data-wow-delay="0.4s">Functions: Pausable Burn Index exc.</p>
-                <p className="fadeInUp" data-wow-delay="0.5s">The BlackDiamondSCInc1 Smart ContractWas Built On The Avalanche Blockchain, Built With ScalabilityIn Mind.</p>
+                <p className="fadeInUp" data-wow-delay="0.4s">Functions: Pausable, Burnable 🔥, Index, Transfer Ownership.</p>
+                <p className="fadeInUp" data-wow-delay="0.5s">The BlackDiamondSCInc1 Smart ContractWas Built On The Avalanche Blockchain, Built With Scalability In Mind.</p>
                 <a className="btn more-btn mt-30 fadeInUp" data-wow-delay="0.6s" href="#">Read More</a>
               </div>
             </div>

@@ -6,7 +6,7 @@ const PricingItem = ({ Round, dollar, bonus }) => {
           <h4>Round {Round}</h4> 
           <h3><strong className="xzc-1-month">{dollar}</strong></h3> 
           <span>1 AVAX= 2 Token</span>
-          <div className="pricing">21,000,000,000,000 Token</div>
+          <div className="pricing">21,000,000,000 Token</div>
           <label><strong>{bonus} bonus</strong></label>
         </div>
       </div>

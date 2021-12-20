@@ -7,7 +7,7 @@ const Service = ({ img, title }) => {
           <img draggable="false" src={img} alt="" />
         </div>
         <h6>{title}</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsu.</p>
+        <p>BlackDiamondSCInc1 ICO Luanch. Decentralized Wallet And Trading Platform.</p>
       </div>
     </div>
   );
