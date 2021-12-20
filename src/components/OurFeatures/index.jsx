@@ -13,7 +13,7 @@ const OurFeatures = ({data , ClassSec , IdSec="" , ClassBox , ClassHead=""}) => 
                     <img draggable="false" src={item.img} alt="" />
                   </div>
                   <h6 className={ClassHead}>{item.title}</h6>
-                  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                  <p>You're Probably Wondering, Why Should I Buy BDSCI1 Tokens, What Makes Them Any Different? Well The Answer Is Quite Simple... We Strive On Innovative Ways To Achieve Success.</p>
                 </div>
               </div>
             ))}
