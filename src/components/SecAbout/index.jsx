@@ -12,8 +12,8 @@ const SecAbout = ({imgDwon=false , title , text , img}) => {
                       <span className="gradient-text blue">{title}</span>
                     </div>
                     <h4 data-aos="fade-up" data-aos-delay="300">{text}</h4>
-                    <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                    <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa ut quasi adipisci voluptates, voluptatibus aliquid alias beatae reprehenderit incidunt iusto laboriosam.</p>
+                    <p data-aos="fade-up" data-aos-delay="300">BlackDiamondSCInc1 ICO Decentralized Wallet And Trading Platform .</p>
+                    <p data-aos="fade-up" data-aos-delay="400">BDSCI1 Built On Avalanche Blockchain.</p>
                     <a className="btn more-btn mt-30" href="#">Read More</a>
                   </div>
                 </div>
@@ -41,8 +41,8 @@ const SecAbout = ({imgDwon=false , title , text , img}) => {
                       <span className="gradient-text ">Decentralized Trading Platform</span>
                     </div>
                     <h4 data-aos="fade-up" data-aos-delay="300">Connect blockchain to the real world and start crypto tading.</h4>
-                    <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                    <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa ut quasi adipisci voluptates, voluptatibus aliquid alias beatae reprehenderit incidunt iusto laboriosam.</p>
+                    <p data-aos="fade-up" data-aos-delay="300">BlackDiamondSCInc1 ICO Decentralized Wallet And Trading Platform.</p>
+                    <p data-aos="fade-up" data-aos-delay="400">We Are The Stones That The Builder Refused, We Are The Head Cornerstones.</p>
                     <a className="btn more-btn mt-30" href="#">Read More</a>
                   </div>
                 </div>

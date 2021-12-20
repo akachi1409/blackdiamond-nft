@@ -16,7 +16,7 @@ const SpreadMap = ({Wwhitepaper , SectionIcon11}) => {
                 <img draggable="false" src={SectionIcon11} alt="" />
               </div>
               <h4 className="text-white">Downoad Our Whitepaper</h4>
-              <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui iste asperiores harum maiores praesentium facere ullam blanditiis, odio dolorum. Officia quisquam eaque suscipit facere ducimus, sit quaerat. Numquam, corrupti?</p>
+              <p className="text-white">To Learn More About Why BDSCI1 Is Right For You, Read Our Whitepaper?</p>
               <a className="btn dream-btn mt-30" href="#">
                 Get Whitepaper
               </a>
