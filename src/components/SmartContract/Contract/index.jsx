@@ -7,7 +7,7 @@ const Contract = ({ img, title }) => {
           <img draggable="false" src={img} alt="" />
         </div>
         <h3><a href="#">{title}</a></h3>
-        <div className="text">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit.</div>
+        <div className="text">BlackDiamondSCInc1 Smart Contract.</div>
       </div>
     </div>
   );
