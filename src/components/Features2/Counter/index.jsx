@@ -24,7 +24,7 @@ const Counter = ({icoCounterClass}) => {
                       <li className="strength">21m</li>
                     </ul>
                     <div className="current-progress">
-                      <Line percent="70" trailWidth="3" strokeWidth="4" strokeColor="#fb881d" />
+                      <Line percent="7" trailWidth="3" strokeWidth="4" strokeColor="#fb881d" />
                     </div>
                     <span className="pull-left">Softcap in 270 days</span>
                     <span className="pull-right">Token Hardcap</span>
