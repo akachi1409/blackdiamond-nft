@@ -15,8 +15,8 @@ const AboutOther = ({ClassTitle="gradient-text blue"}) => {
                 <span className={ClassTitle}>Decentralized Trading Platform</span>
               </div>
               <h4 className="fadeInUp" data-aos="fade-up" data-aos-delay="200">Connect blockchain to the real world and start crypto tading.</h4>
-              <p className="fadeInUp" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-              <p className="fadeInUp" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa ut quasi adipisci voluptates, voluptatibus aliquid alias beatae reprehenderit incidunt iusto laboriosam.</p>
+              <p className="fadeInUp" data-aos="fade-up" data-aos-delay="200">BDSCI1 Read and Write Functions Located Write Here On The Platform, No Need To Go Anywhere Else.</p>
+              <p className="fadeInUp" data-aos="fade-up" data-aos-delay="300">BlackDiamondSCInc1 can be traded on these exchange, Trader Joe, Pangolin, Canary, Kyber Swap & Yeti Swap .</p>
               <a className="btn more-btn mt-30" href="#">Read More</a>
             </div>
           </div>
