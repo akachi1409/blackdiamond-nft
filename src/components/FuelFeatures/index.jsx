@@ -24,8 +24,8 @@ const FuelFeatures = () => {
                     <div className="icon-img-box">
                       <img draggable="false" src={HomeDemo2SmallCar} alt="" width={140} />
                     </div>
-                    <h3><a href="#">great customer experience</a></h3>
-                    <div className="text">Lorem ipsum dolor sit amet, adipisicing elit. Laudantium modi assumenda beatae.</div>
+                    <h3><a href="#">Great customer experience</a></h3>
+                    <div className="text">From The Entire Team At BlackDiamond SC Inc Happy Holidays.</div>
                   </div>
                 </div>
               </div>
