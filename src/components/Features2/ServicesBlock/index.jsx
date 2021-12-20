@@ -8,7 +8,7 @@ const ServicesBlock = ({img , title}) => {
               <img draggable="false" src={img} alt="" />
             </div>
             <h3><a href="#">{title}</a></h3>
-            <div className="text">Lorem ipsum dolor sit amet, conse ctetur.</div>
+            <div className="text">Smart Contract & Blockchain Dev Services.</div>
           </div>
         </div>
     );
