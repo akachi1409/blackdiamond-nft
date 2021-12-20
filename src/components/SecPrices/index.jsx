@@ -10,7 +10,7 @@ const SecPrices = ({ClassSec="features section-padding-0-70" , data , ClassSpanT
 
           <SectionHeading
             title="Token Prices"
-            text="Our Token Prices"
+            text="BDSCI1 Token Prices"
             ClassSpanTitle={ClassSpanTitle}
           />          
           <div className="row align-items-center">
