@@ -23,7 +23,7 @@ const Roadmap = ({data , ClassSpanTitle}) => {
                     </div>
                     <div className="timeline-content">
                       <h5 className="title">{item.title}</h5>
-                      <p className="description text-light-gray"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.</p>
+                      <p className="description text-light-gray"> This Roadmap Represents The Journey And MilestonesWe Have Reached And Intend To Reach.</p>
                     </div>
                   </div>
                 ))}
