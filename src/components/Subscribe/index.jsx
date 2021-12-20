@@ -8,7 +8,7 @@ const Subscribe = () => {
             <div className="col-sm-12">
               <div className="subscribe-wrapper">
                 <div className="section-heading text-center">
-                  <h2 data-aos="fade-up" data-aos-delay="300">Don’t Miss ICO News And Updates!</h2>
+                  <h2 data-aos="fade-up" data-aos-delay="300">Don’t Miss BDSCI1 ICO News And Updates!</h2>
                   <p data-aos="fade-up" data-aos-delay="400">We Are The Stones That The Builder Refused, We Are The Head Cornerstones.</p>
                 </div>
                 <div className="service-text text-center">
