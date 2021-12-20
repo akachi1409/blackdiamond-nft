@@ -1,22 +1,22 @@
 [
     {
         "Round":1,
-        "dollar":"0.96$",
+        "dollar":"67.37$",
         "bonus":"42%"
     },
     {
         "Round":2,
-        "dollar":"1.25$",
+        "dollar":"73.22$",
         "bonus":"35%"
     },
     {
         "Round":3,
-        "dollar":"1.50$",
+        "dollar":"80.15$",
         "bonus":"25%"
     },
     {
         "Round":4,
-        "dollar":"1.96$",
+        "dollar":"120.16$",
         "bonus":"15%"
     }
 ]
