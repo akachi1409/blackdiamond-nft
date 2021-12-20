@@ -22,7 +22,7 @@ const HowItWorks = ({data , ClassSpanTitle}) => {
                     <span className="step-num">{item.steps}</span>
                   </div>
                   <h6>{item.title}</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, max imus ut accumsan ut, posuere sit.</p>
+                  <p>Register Today, Setup A New Account And Start Trading Today.</p>
                 </div>
               </div>
             ))}
