@@ -10,7 +10,7 @@ const SmartContract = ({data}) => {
             <div className="col-12 col-lg-6 offset-lg-0">
               <div className="who-we-contant">
                 <div className="dream-dots text-left fadeInUp" data-wow-delay="0.2s">
-                  <span className="gradient-text blue">Smart Contract</span>
+                  <span className="gradient-text blue">BDSCI1 Smart Contract</span>
                 </div>
                 <h4 className="fadeInUp" data-wow-delay="0.3s">Comprehensive smart contracts.</h4>
                 <p className="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
