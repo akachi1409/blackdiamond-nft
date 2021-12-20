@@ -1,11 +1,11 @@
 [
 	{
-		"title":"RIVACY &amp; TOS",
-		"text1":"dvertiser Agreement",
-		"text2":"cceptable Use Policy",
-		"text3":"rivacy Policy",
-		"text4":"echnology Privacy",
-		"text5":"eveloper Agreement",
+		"title":"PRIVACY &amp; TOS",
+		"text1":"Advertiser Agreement",
+		"text2":"Acceptable Use Policy",
+		"text3":"Privacy Policy",
+		"text4":"Technology Privacy",
+		"text5":"Developer Agreement",
         "classBlock":"col-12 col-lg-3 col-md-6",
         "classInfo":"contact_info mt-x text-center fadeInUp"
 	},
