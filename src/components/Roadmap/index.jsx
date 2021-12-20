@@ -7,7 +7,7 @@ const Roadmap = ({data , ClassSpanTitle}) => {
       <section className="roadmap section-padding-0-0" id="roadmap">
         <SectionHeading
           title="ICO Roadmap"
-          text="Our ICO Roadmap"
+          text="BDSCI1 ICO Roadmap"
           ClassSpanTitle={ClassSpanTitle}
         />
         <div className="container">
@@ -23,7 +23,7 @@ const Roadmap = ({data , ClassSpanTitle}) => {
                     </div>
                     <div className="timeline-content">
                       <h5 className="title">{item.title}</h5>
-                      <p className="description text-light-gray"> This Roadmap Represents The Journey And MilestonesWe Have Reached And Intend To Reach.</p>
+                      <p className="description text-light-gray"> This Roadmap Represents The Journey And Milestones That We Have Reached And Intend To Reach.</p>
                     </div>
                   </div>
                 ))}
