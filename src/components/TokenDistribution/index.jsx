@@ -2,7 +2,7 @@ import {
   HomeDemo1Distribution,
   HomeDemo1Graph11,
 } from "../../utils/allImgs"
-
+import TokenDistributionImg from "../../utils/allImgs/distribution.png"
 import SectionHeading from "../SectionHeading"
 
 const TokenDistribution = ({data , ClassSpanTitle}) => {
@@ -29,7 +29,7 @@ const TokenDistribution = ({data , ClassSpanTitle}) => {
               <div className="row">
                 <div className="col-sm-4">
                   <div>
-                    <img draggable="false" src={HomeDemo1Graph11} className="center-block" alt="" />
+                    <img draggable="false" src={TokenDistributionImg} className="center-block" alt="" />
                   </div>
                 </div>
                 <div className="col-sm-8">

@@ -29,7 +29,7 @@ import {
     HomeDemo2BlogImg3,
 
 } from '../../../utils/allImgs'
-
+import FounderLogo from "../../../utils/allImgs/founder-logo.png";
 export const HowItWorksInfo = [
     {
         img1:HomeDemo2IconsH1,
@@ -106,25 +106,26 @@ export const Features2InfoDown = [
 
 export const OurTeamInfo = [
     {
-        img:HomeDemo2TeamImg1,
-        title:"Joman Helal",
-        text:"Executive Officer"
-    },
-    {
-        img:HomeDemo2TeamImg2,
-        title:"Slans Alons",
-        text:"Business Development"
-    },
-    {
-        img:HomeDemo2TeamImg3,
-        title:"Josha Michal",
-        text:"UX/UI Designer"
-    },
-    {
-        img:HomeDemo2TeamImg4,
-        title:"Johan Wright",
-        text:"Head of Marketing"
+        img:FounderLogo,
+        title:"Jacque DeGraff",
+        text:"Founder & Developer"
     }
+    // ,
+    // {
+    //     img:HomeDemo2TeamImg2,
+    //     title:"Slans Alons",
+    //     text:"Business Development"
+    // },
+    // {
+    //     img:HomeDemo2TeamImg3,
+    //     title:"Josha Michal",
+    //     text:"UX/UI Designer"
+    // },
+    // {
+    //     img:HomeDemo2TeamImg4,
+    //     title:"Johan Wright",
+    //     text:"Head of Marketing"
+    // }
 ]
 
 export const OurBlogInfo = [

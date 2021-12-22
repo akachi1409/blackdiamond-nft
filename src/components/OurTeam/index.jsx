@@ -18,7 +18,7 @@ const OurTeam = ({data , ClassSpanTitle}) => {
           </div>
           <div className="row">
             {data && data.map((item , key) => (
-                <div className="col-12 col-sm-6 col-lg-3" key={key}>
+                <div className="col-12" key={key}>
                   <div className="single-team-member" data-aos="fade-up">
                     {/* Image */}
                     <div className="team-member-thumb">
@@ -31,7 +31,7 @@ const OurTeam = ({data , ClassSpanTitle}) => {
                     </div>
                     {/* Social Icon */}
                     <div className="team-social-icon">
-                      <a href="#"><i className="fa fa-linkedin" /></a>
+                      {/* <a href="#"><i className="fa fa-linkedin" /></a> */}
                     </div>
                   </div>
                 </div>

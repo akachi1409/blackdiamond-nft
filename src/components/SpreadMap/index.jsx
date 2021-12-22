@@ -1,3 +1,5 @@
+import Book from "../../utils/allImgs/whitepaper.pdf"
+
 const SpreadMap = ({Wwhitepaper , SectionIcon11}) => {
 
   return (
@@ -17,7 +19,7 @@ const SpreadMap = ({Wwhitepaper , SectionIcon11}) => {
               </div>
               <h4 className="text-white">Downoad Our Whitepaper</h4>
               <p className="text-white">To Learn More About Why BDSCI1 Is Right For You, Read Our Whitepaper?</p>
-              <a className="btn dream-btn mt-30" href="#">
+              <a className="btn dream-btn mt-30" href={Book}>
                 Get Whitepaper
               </a>
             </div>
